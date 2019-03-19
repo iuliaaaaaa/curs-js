@@ -41,5 +41,5 @@ console.log(2019 - person.pets.mao.age);
 
 var difference = (person.age - person.pets.lisa.age);
 var petName = person.pets.lisa.name;
-console.log('Intre ' + person.name + ' si ' + person.pets.lisa.name + 'este o diferenta de ' + ' ' + difference + ' ani.');
+console.log('Intre ' + person.name + ' si ' + person.pets.lisa.name + ' este o diferenta de ' + ' ' + difference + ' ani.');
 //tema optionala//
