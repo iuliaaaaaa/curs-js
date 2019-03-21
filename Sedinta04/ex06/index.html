@@ -6,6 +6,59 @@
 </head>
 <body>
 
-    <!-- insert script tag here -->
+    <script>
+var person = {
+name: 'Dragos',
+surname: 'Iordache',
+age: 60,
+petOwner: false,
+skills:['html', 'javascript', 'css', 'java', 'c++', 'node', 'jquery'],
+friends:[{
+  name: 'Larry',
+  surname: 'Larryson',
+  age: 30,
+}, {
+  name: 'Steven',
+  surname: 'Stevenson',
+  age: 31
+}, {
+  name: 'Carol',
+  surname: 'Carolson',
+  age: 29
+}]
+};
+person.name = 'Dragos';
+person.friends.name = ['Larry', 'Steven', 'Carol'];
+for (i = 0; i < person.skills.length ; i ++) {
+  // console.log(person.skills[i]);
+
+  if(person.skills[i].charAt(0) !== 'j') {
+    console.log(person.skills[i]);
+  };
+  for(i = 0; i <= person.friends.name; i++) {
+    console.log('Prietenii mei se numesc' + person.friends.name[i]);
+  };
+  var i = 0;
+  currentyear = 2019;
+  var totalAge = 0;
+  for(i = 0; i < person.friends.length; i++) {
+    totalAge = totalAge + person.friends[i] + age;
+  }
+  console.log(totalAge);
+
+  var totalSum = 0;
+  for(i = 0; i < person.friends.length; i++); {
+    var age = person.friends[i].age;
+    birthYear = currentYear - age;
+
+    console.log(birthYear);
+
+    totalSum = totalSum + birthYear
+  }
+  console.log(totalSum);
+};
+
+
+</script>
 </body>
 </html>
