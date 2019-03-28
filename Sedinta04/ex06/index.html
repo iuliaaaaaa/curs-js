@@ -32,12 +32,14 @@ person.friends.name = ['Larry', 'Steven', 'Carol'];
 person.friends.larry = 'Larry';
 person.friends.steven = 'Steven';
 person.friends.carol = 'Carol';
+
 for (i = 0; i < person.skills.length ; i ++) {
-  // console.log(person.skills[i]);
+   console.log(person.skills[i]);
 
   if(person.skills[i].charAt(0) !== 'j') {
     console.log(person.skills[i]);
   };
+
   for(i = 0; i <= person.friends.name; i++) {
     console.log('Prietenii mei se numesc' + person.friends.name[i]);
   };
@@ -50,7 +52,7 @@ for (i = 0; i < person.skills.length ; i ++) {
   console.log(totalAge);
 
   var totalSum = 0;
-  for(i = 0; i < person.friends.length; i++); {
+  for(i = 0; i < person.friends.length; i++) {
     var age = person.friends[i].age;
     birthYear = currentYear - age;
 
@@ -61,13 +63,20 @@ for (i = 0; i < person.skills.length ; i ++) {
 
   console.log(totalSum);
   console.log(person.age - totalAge);
-  console.log('Intre Dragos si Larry este o diferenta de ' + person.age - person.friends.larry.age +
-  'ani. Intre Dragos si Steven este o diferenta de ' + person.age-person.friends.steven.age );
+  console.log('Intre Dragos si Larry este o diferenta de ' + person.age - person.friends[i].larry.age +
+  'ani. Intre Dragos si Steven este o diferenta de ' + person.age-person.friends[i].steven.age );
 //for(length - 1; i>= 0; i++);{
 //}
   for(i = 0; i <person.skills.length; i++); {
-    person.skills.sort(function(a, b){return b-a});
+//  person.skills.sort(function(a, b){return b-a});
   };
+  //TEMA//
+  var difference = 0,
+  difference = person.freinds.larry.age - person.friends.age;
+  for(i = 0; i < person.friends.length; i++) {
+    console.log('Intre ' + person.friends.larry.name + ' si ' + person.friends[i].name + '
+     este o diferenta de ' + difference + ' ani ');
+  }
 
 };
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>For</title>
+</head>
+<body>
+
+    <script>
+var person = {
+name: 'Dragos',
+surname: 'Iordache',
+age: 60,
+petOwner: false,
+skills:['html', 'javascript', 'css', 'java', 'c++', 'node', 'jquery'],
+friends:[{
+  name: 'Larry',
+  surname: 'Larryson',
+  age: 30,
+}, {
+  name: 'Steven',
+  surname: 'Stevenson',
+  age: 31
+}, {
+  name: 'Carol',
+  surname: 'Carolson',
+  age: 29
+}]
+};
+
+person.friends.larry = 'Larry',
+person.friends.steven = 'Steven',
+person.friends.carol = 'Carol';
+
+for(i = 0; i < person.friends.length; i++) {
+  var difference = 0,
+  
+  difference = person.friends.larry.age - person.friends[i].age;
+   if(person.friends.name !== person.friends[i].name) {
+  console.log('Intre ' + person.friends.larry.name + ' si ' +
+  person.friends[i].name + ' este o diferenta de ' + difference + ' ani ');
+continue;
+};
+};
+
+for(i = 0; i < person.friends.length; i++) {
+  var difference = 0,
+  difference = person.friends.steven.age - person.friends[i].age;
+   if(person.friends.name !== person.friends[i].name) {
+  console.log('Intre ' + person.friends.steven.name + ' si ' +
+  person.friends[i].name + ' este o diferenta de ' + difference + ' ani ');
+continue;
+};
+};
+
+for(i = 0; i < person.friends.length; i++) {
+  var difference = 0,
+  difference = person.friends.carol.age - person.friends[i].age;
+   if(person.friends.name !== person.friends[i].name) {
+  console.log('Intre ' + person.friends.carol.name + ' si ' +
+  person.friends[i].name + ' este o diferenta de ' + difference + ' ani ');
+continue;
+};
+};
+
+for( i = 0; i < person.friends.length; i++) {
+  console.log(person.friends[i].age);
+
+  friends[i].forEach(function(element, index, array) {
+    if()
+  });
+}
+
+
+
+
+
+</script>
+</body>
+</html>
