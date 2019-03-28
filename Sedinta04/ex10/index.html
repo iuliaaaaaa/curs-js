@@ -5,7 +5,61 @@
     <title>Foreach</title>
 </head>
 <body>
+<script>
 
-    <!-- insert script tag here -->
+var person = {
+name: 'Dragos',
+surname: 'Iordache',
+age: 32,
+petOwner: false,
+skills:['html', 'javascript', 'css', 'java', 'c++', 'node', 'jquery'],
+friends:[{
+  name: 'Larry',
+  surname: 'Larryson',
+  age: 30,
+}, {
+  name: 'Steven',
+  surname: 'Stevenson',
+  age: 31
+}, {
+  name: 'Carol',
+  surname: 'Carolson',
+  age: 29
+}]
+};
+
+person.skills.forEach(function(skill) {
+  if(!skill.startsWith('j')) {
+    console.log(skill);
+  };
+
+});
+
+person.friends.forEach(function(friends,index,array) {
+  var array = person.friends;
+  console.log('Prietenii mei se numesc' + ' ' + array);
+});
+
+// person.friends.forEach(function(element,index,array) {
+//   var totalAge =  0;
+//   totalAge = totalAge + person.friends.age;
+// console.log(totalAge);
+// });
+//
+// person.friends.forEach(function(element,index,array) {
+// var age = person.friends.age,
+//     currentYear = 2019,
+//     birthYear = currentYear - age;
+//   console.log(birthYear);
+//     totalSum = totalSum + birthYear
+//
+//   console.log(totalSum);
+// })
+
+
+
+
+
+</script>
 </body>
 </html>

@@ -46,3 +46,6 @@ for(i = 0; i < person.pets.length; i++) {
   console.log(' Intre ' + person.firstName + ' si ' + person.pets[i].name +
   ' este o diferenta de ' + difference + ' ani ');
 }
+//if(element === 30) {
+//return;
+//}
