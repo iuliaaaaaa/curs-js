@@ -72,14 +72,13 @@ var prop = ''
 person.friends.forEach(function(friend, index) {
   var difference = person.age - friend.age;
   prop += 'Intre ' + person.name + ' si ' + friend.name +  ' este o diferenta de ' + difference +
-  ' ani.')
+  ' ani.';
 });
 console.log(prop);
-
+person.skills.reverse();
 person.skills.forEach(function(skill, index) {
-	console.log(person.skills.reverse());
+  console.log(skill);
 });
-
 
 
 
