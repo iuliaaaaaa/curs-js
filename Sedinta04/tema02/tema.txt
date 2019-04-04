@@ -1,0 +1,20 @@
+for foreach (while)
+
+1.
+Ma numesc Dragos Iordache si stiu html.
+Ma numesc Dragos Iordache si stiu javascript.
+Ma numesc Dragos Iordache si stiu css.
+Ma numesc Dragos Iordache si stiu java.
+Ma numesc Dragos Iordache si stiu c++.
+
+2.
+- bucla prin person.friends
+- bucla interioara care folosest person.skills
+Ma numesc Larry Larryson si stiu html.
+Ma numesc Larry Larryson si stiu javascript.
+-----
+Ma numesc Steven Stevenson si stiu html
+
+3.
+if (person.petOwner)
+Ma numesc Dragos si am| nu am animale.
