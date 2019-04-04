@@ -5,7 +5,19 @@
     <title>Variable scope</title>
 </head>
 <body>
+<script>
+var globalVariable = 'Ma aflu in contextul global';
 
-    <!-- insert script tag here -->
+if (true) {
+  var localVariable = 'Ma aflu in contextul local',
+      globalVariable = 'Nu ma aflu in contextul local';
+  console.log(globalVariable);
+  console.log(localVariable);
+  
+}
+  console.log(localVariable);
+
+
+</script>
 </body>
 </html>

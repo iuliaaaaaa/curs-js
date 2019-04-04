@@ -5,7 +5,67 @@
     <title>Object.keys</title>
 </head>
 <body>
+<script>
+  var person = {
+  name: 'Dragos',
+  surname: 'Iordache',
+  age: 32,
+  petOwner: false,
+  skills: {
+    html: true,
+    css: true,
+    javaScript: true
+  },
+  friends: {
+    larry: {
+    name: 'Larry',
+    surname: 'Larryson',
+    age: 30,
+  },
+  steven: {
+    name: 'Steven',
+    surname: 'Stevenson',
+    age: 32
+  },
+  carol: {
+    name: 'Carol',
+    surname: 'Carolson',
+    age: 29
+   }
+ }
+};
 
-    <!-- insert script tag here -->
+console.log(Object.keys(person));
+console.log(Object.keys(person.skills));
+var arr = Object.keys(person.skills);
+    prop = '';
+for (i = 0; i < arr.length; i++ ) {
+  prop += arr[i] + ' ';
+  console.log(arr[i]);
+};
+  console.log(prop);
+
+var friends = Object.keys(person.friends),
+    prop = 'Prietenii mei sunt ';
+for (i = 0; i < friends.length; i ++) {
+  console.log(person.friends[friends[i]].name);
+  prop +=  person.friends[friends[i]].name + ' ' ;
+};
+  console.log(prop);
+for(i = 0; i < friends.length; i ++) {
+  if(person.age > person.friends[friends[i]].age) {
+    console.log(person.friends[friends[i]].name + ' este mai mic decat ' + person.name);
+  } else if(person.age < person.friends[friends[i]].age ) {
+    console.log(person.friends[friends[i]].name + ' este mai mare decat ' + person.name);
+  } else {
+    console.log('Varsta lui ' + person.friends[friends[i]].name + ' este egala cu ' + person.name);
+  }
+}
+
+
+
+
+
+</script>
 </body>
 </html>
