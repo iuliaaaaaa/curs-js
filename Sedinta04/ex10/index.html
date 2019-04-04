@@ -30,52 +30,55 @@ friends:[{
 
 person.skills.forEach(function(skill) {
     if(!skill.startsWith('j')) {
-    console.log(skill);
-  };
-  });
+      console.log(skill);
+    };
+});
 
-  var prop = 'Prietenii mei se numesc: ',
-  	        arrayLength = person.friends.length;
+var prop = 'Prietenii mei se numesc: ',
+  arrayLength = person.friends.length;
 
-
-person.friends.forEach(function(friend, index) {
- var fullName = friend.name + ' ' + friend.surname;
-     prop += fullName;
-
-if (index < arrayLength - 1) {
-  	prop += ', ';
-  	 }
-   });
-
-   console.log(prop + '.');
-   var currentYear = 2019;
 
 person.friends.forEach(function(friend, index) {
-    console.log(friend.age);
-    });
+   var fullName = friend.name + ' ' + friend.surname;
+       prop += fullName;
 
-    var totalAge = 0;
+   if (index < arrayLength - 1) {
+      prop += ', ';
+   }
+});
+
+ console.log(prop + '.');
+
+person.friends.forEach(function(friend, index) {
+  console.log(friend.age);
+});
+
+var totalAge = 0;
 person.friends.forEach(function(friend, index) {
   totalAge = totalAge + friend.age;
-  console.log(totalAge);
-  });
-var totalSum = 0;
+});
+console.log(totalAge);
+
+var totalSum = 0,
+  currentYear = 2019;
 person.friends.forEach(function(friend, index) {
   var age = friend.age,
       birthYear = currentYear - age;
-      totalSum = totalSum + birthYear;
-  console.log(totalSum);
-  console.log(friend.age - totalAge);
+      totalSum += birthYear;
 });
+console.log(totalSum);
+
+var prop = ''
 person.friends.forEach(function(friend, index) {
   var difference = person.age - friend.age;
-  console.log('Intre Dragos si ' + friend.name +  ' este o diferenta de ' + difference +
+  prop += 'Intre ' + person.name + ' si ' + friend.name +  ' este o diferenta de ' + difference +
   ' ani.')
 });
+console.log(prop);
 
 person.skills.forEach(function(skill, index) {
 	console.log(person.skills.reverse());
-	});
+});
 
 
 
