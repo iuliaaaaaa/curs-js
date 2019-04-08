@@ -9,7 +9,7 @@ Ma numesc Dragos Iordache si stiu c++.
 
 2.
 - bucla prin person.friends
-- bucla interioara care folosest person.skills
+- bucla interioara care foloseste person.skills
 Ma numesc Larry Larryson si stiu html.
 Ma numesc Larry Larryson si stiu javascript.
 -----
