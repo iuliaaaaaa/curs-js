@@ -5,6 +5,19 @@
     <title>Rectangles</title>
 </head>
 <body>
-  
+  <script>
+
+var calculateRectangleArea = (L , l) => {
+  return L * l;
+};
+
+var totalArea = 2 * calculateRectangleArea(6, 2.5) + 2 * calculateRectangleArea(4, 2.5),
+    door = calculateRectangleArea(2.2 , 1.5),
+    windows = calculateRectangleArea(2 , 1.5);
+
+console.log(totalArea - (door + windows));
+
+
+  </script>
 </body>
 </html>
