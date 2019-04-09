@@ -9,14 +9,17 @@
 var calculateRectangleArea = function(L, l) {
   return L * l;
 }
-calculateRectangleArea();
-//console.log(calculateRectangleArea(350, 200) - calculateRectangleArea(100, 250));
+// calculateRectangleArea();
+// console.log(calculateRectangleArea(350, 200) - calculateRectangleArea(100, 250));
 var difference = calculateRectangleArea(350, 200) - calculateRectangleArea(100, 250),
     production = 25;
-    console.log(difference * production + ' kg');
+
+console.log(difference * production + ' kg');
+
 var hamei = calculateRectangleArea(400, 370) * production ,
-    beer = hamei / 2.5;
-    console.log(beer + ' l');
+    beer = hamei * 2.5 / 10;
+
+console.log(beer + ' l');
 </script>
 </body>
 </html>
