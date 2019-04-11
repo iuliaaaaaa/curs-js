@@ -5,6 +5,26 @@
     <title>Object Methods</title>
 </head>
 <body>
+<script>
+var person = {
+  getName: function () {
+    return 'Dragos Iordache';
+  },
+  getAge: function() {
+    return 32;
+  }
+};
 
+console.log(person.getName());
+console.log(person.getAge());
+var date = 2019;
+console.log(date - person.getAge());
+console.log('Ma numesc ' + person.getName() + ' si am ' + person.getAge() + ' ani.');
+
+
+
+
+
+</script>
 </body>
 </html>
