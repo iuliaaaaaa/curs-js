@@ -5,6 +5,22 @@
     <title>Object Methods</title>
 </head>
 <body>
+<script>
+var person = {
+  getName: function () {
+    return 'Dragos Iordache';
+  },
+  getAge: function() {
+    return 32;
+  }
+};
 
+function accesor(methodSuffix) {
+  var methodName = 'get' + methodSuffix;
+  return person[methodName]();
+}
+
+console.log(accesor('Name'));
+</script>
 </body>
 </html>
