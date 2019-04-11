@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Object access</title>
+  </head>
+  <body>
+    <script>
+
+var object = {
+  elev01: 'Larry Laryson',
+  elev02: 'Steven Stevenson',
+  elev03: 'Carol Carolson',
+  elev04: 'Andra Andrason',
+},
+  i = 1,
+  keyNumber = Object.keys(object).length;
+
+for (; i <= keyNumber; i++) {
+  console.log(object['elev0' + i], i);
+}
+
+
+
+      </script>
+  </body>
+</html>

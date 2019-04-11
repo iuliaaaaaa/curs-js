@@ -15,12 +15,18 @@ var person = {
   }
 };
 
-function accesor(methodSuffix) {
+function accessor(methodSuffix) {
   var methodName = 'get' + methodSuffix;
   return person[methodName]();
 }
 
-console.log(accesor('Name'));
+console.log(accessor('Name'));
+console.log(accessor('Age'));
+
+var d = 2019;
+console.log( d - accessor('Age'));
+console.log('Ma numesc ' + accessor('Name') + ' si am ' + accessor('Age') + ' de ani.');
+
 </script>
 </body>
 </html>
