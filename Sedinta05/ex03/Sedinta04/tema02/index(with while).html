@@ -31,13 +31,14 @@ friends:[{
 var skills = person.skills,
     prop = 'Ma numesc ' + person.name + ' ' + person.surname + ' si stiu ',
     i = 0;
-while(skills[i])  {
+while(i < skills.length)  {
   console.log(prop + skills[i]);
   i++;
 }
+
 var friends = person.friends,
     j = 0;
-while(friends[j]) {
+while(j < friends.length) {
   console.log('Ma numesc ' + friends[j].name +  ' ' + friends[j].surname + ' si stiu ' + person.skills);
   j++;
 }
