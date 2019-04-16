@@ -22,9 +22,14 @@ var car = {
   stop: function() {
     this.speed = 0;
   },
-  setSpeed: function(a) {
-    a >= topReverseSpeed,
-    a <= topSpeed
+  setSpeed: function(speed) {
+    if(speed >= this.topSpeed) {
+      this.speed = this.topSpeed;
+    }else if (speed <= this.topReverseSpeed) {
+      this.speed = this.topReverseSpeed;
+    } else {
+      this.speed = speed;
+    }
   }
 
 };
