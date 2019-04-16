@@ -6,6 +6,41 @@
 </head>
 <body>
   <script>
+var x = function calculateSurface(L, l) {
+  return L * l;
+},
+  //  terms = [L, l],
+  //  a = terms.length === 2,
+  //  b = L === l,
+  //  c = terms.length === 3;
+
+  switch (x) {
+    case 0 :
+      function calculateSurface(L, l) {
+        return L * l;
+      }
+        break;
+    case 1 :
+      function calculateSurface(l, l) {
+        return Math.pow(l, 2);
+      }
+        break;
+    case 2 :
+    function calculateSurface(L, l, l) {
+        return L * l * l;
+      }
+        break;
+
+      default:
+      function calculateSurface(L, l) {
+        return L * l;
+      }
+    };
+
+
+
+
+console.log('Ex.2');
 
 var calculateCircleArea = (r) => {
   return Math.pow(r, 2) * Math.PI;
@@ -14,7 +49,32 @@ console.log(calculateCircleArea(2));
 console.log(calculateCircleArea(20));
 console.log(calculateCircleArea(16));
 
+console.log('Ex.3');
 
+var pet = {
+  getName: function () {
+    return 'Lisa';
+  },
+  getAge: function() {
+    return 4;
+  },
+  getSpecies: function() {
+    return 'doggo';
+  }
+};
+console.log(pet.getName() + ' has ' + pet.getAge() + ' years and she is a ' + pet.getSpecies());
+
+var petAge = pet.getAge();
+console.log('My doggo has ' + petAge + ' years.');
+
+
+console.log('Ex.3');
+
+var hero = {
+  moveRight: if (function()) {
+    return 'one step';
+  } else {'I will make ' + () + 'steps on the right'};
+}
 
 
 
