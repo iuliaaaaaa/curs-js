@@ -6,39 +6,24 @@
 </head>
 <body>
   <script>
-var x = function calculateSurface(L, l) {
+console.log('Ex.1');
+
+function polyFunction(L, l, h) {
+  switch (arguments.length) {
+    case 1:
   return L * l;
-},
-
-    a = arguments.length === 2,
-    b = L === l,
-    c = arguments.length === 3;
-
-  switch (x) {
-    case a :
-        return L * l;
-      }
-      }
-        break;
-    case b :
-      function calculateSurface(l, l) {
-        return Math.pow(l, 2);
-      }
-        break;
-    casec :
-    function calculateSurface(L, l, l) {
-        return L * l * l;
-      }
-        break;
-
-      default:
-      function calculateSurface(L, l) {
-        return L * l;
-      }
-    };
-
-
-
+  break;
+    case 2:
+  return L * l;
+  break;
+    case 3:
+  return 2 * (L * l) + 2 * (L * h) + 2 * (l * h);
+  break;
+    default:
+  console.warn('Not enough');
+  break;
+}
+}
 
 console.log('Ex.2');
 
@@ -71,20 +56,39 @@ console.log('My doggo has ' + petAge + ' years.');
 console.log('Ex.3');
 
 var hero = {
-
-moveRight: function(steps) {
-if( != steps) {
-  console.log('ma misc cu un pas la dreapta.');
+    moveRight: function(steps) {
+if(steps >= 0) {
+  console.log('Ma misc cu ' + steps + ' pasi '+ 'la dreapta');
 } else {
-  console.log('Ma misc cu ' + steps + 'la dreapta');
-
+  console.log('Ma misc cu un pas la dreapta');
+      }
+    }
+    moveLeft: function(steps) {
+if(steps >= 0) {
+  console.log('Ma misc cu ' + steps + ' pasi '+ 'la stanga');
+} else {
+  console.log('Ma misc cu un pas la stanga');
+      }
+    }
+    moveDown: function(steps) {
+if(steps >= 0) {
+  console.log('Ma misc cu ' + steps + ' pasi '+ 'in jos');
+} else {
+  console.log('Ma misc cu un pas in jos');
+      }
+    }
+    moveUp: function(steps) {
+if(steps >= 0) {
+  console.log('Ma misc cu ' + steps + ' pasi '+ 'in sus');
+} else {
+  console.log('Ma misc cu un pas in sus');
+    }
+  }
 }
-}
-
-
 
 
 
 
 </script>
 </body>
+</html>
