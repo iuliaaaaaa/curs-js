@@ -30,25 +30,34 @@ var car = {
     } else {
       this.speed = speed;
     }
-  }
-  isTrunkOpen: true,
+  },
+  isTrunkOpen: false,
   openTrunk: function() {
-    isTrunkOpen = true;
+    this.isTrunkOpen = true;
   },
   closeTrunk: function() {
-    isTrunkOpen = false;
-  }
-  areLightsOn: true,
+    this.isTrunkOpen = false;
+  },
+  areLightsOn: false,
   openLights: function() {
-    areLightsOn = true;
+    this.areLightsOn = true;
   },
   closeLights: function() {
-    areLightsOn = false;
+    this.areLightsOn = false;
   },
-  flashLights:
+  flashLights: function() {
+    var self = this;
+self.openLights();
+window.setTimeout(function() {
+  self.closeLights();
+}, 7000 );
+},
+  toggleLights: function() {
+    this.areLightsOn = !this.areLightsOn;
+  }
 
-  setTimeout(function(){ openLights.value = " open" }, 1000);
-  setTimeout(function(){ closeLights.value = "close" }, 1000);
+  //setTimeout(function(){ openLights.value = " open" }, 1000);
+  //setTimeout(function(){ closeLights.value = "close" }, 1000);
 
 };
 
